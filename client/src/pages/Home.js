@@ -30,7 +30,7 @@ const FETCH_POSTS_QUERY = gql `
 function Home() {
     const { loading, data, error } = useQuery(FETCH_POSTS_QUERY);
 
-    if (loading) return 'Loading mother fucker...'
+    if (loading) return 'Loading...'
     if (error) return `Error ${error.message}`;
 
     // test for data coming into the Component
