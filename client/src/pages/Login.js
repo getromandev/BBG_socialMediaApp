@@ -10,7 +10,7 @@ function Login(props) {
     const context = useContext(AuthContext)
     const [errors, setErrors] = useState({});
 
-    const { onChange, onSubmit, values} = useForm(loginUserCallback, {
+    const { onChange, onSubmit, values } = useForm(loginUserCallback, {
         username: '',
         password: ''
     })

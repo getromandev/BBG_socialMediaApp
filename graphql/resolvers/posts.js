@@ -34,8 +34,8 @@ module.exports = {
             const user = checkAuth(context);
             console.log('user ==>', user);
 
-            if (argsToArgsConfig.body.trim() === '') {
-                throw new Error('Post boday myst not be empty');
+            if (body.trim() === '') {
+                throw new Error('Post body must not be empty');
             }
 
             const newPost = new Post({
